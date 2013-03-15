@@ -5,6 +5,12 @@ require File.expand_path("#{File.dirname __FILE__}/../display")
 require File.expand_path("#{File.dirname __FILE__}/history")
 require File.expand_path("#{File.dirname __FILE__}/reuse")
 
+module HTTY; end
+
+class HTTY::CLI; end
+
+module HTTY::CLI::Commands; end
+
 # Encapsulates the _history-verbose_ command.
 class HTTY::CLI::Commands::HistoryVerbose < HTTY::CLI::Command
 
